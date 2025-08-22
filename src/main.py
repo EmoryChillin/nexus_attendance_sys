@@ -24,11 +24,19 @@ from flet import (
 )
 
 import utils.date_picker_example as date_picker_example
+# import Widget
+from assets.shared.widget import *
 
 def main(page: Page):
     page.title = "Nexus Attendance"
     page.padding = 20
     
+    page.fonts = {
+        "font_light" : "fonts/proximanova_light.ttf",
+        "font_regular" : "fonts/proximanova_regular.ttf",
+        "font_bold" : "fonts/proximanova_bold.ttf",
+    }
+
     #page.vertical_alignment = ft.MainAxisAlignment.CENTER
     page.appbar = ft.AppBar(
         leading=Row(
@@ -45,17 +53,17 @@ def main(page: Page):
                 Text(
                     value="Time and Attendance",
                     size=27,
-                    font_family='Poppins',
+                    font_family='font_bold',
                     weight=FontWeight.W_500
                 ),
                 FilledButton(
-                    text = "Record Attendance",
+                    text="Record Attendance",
                     height=40,
                     width=190,
-                    color = 'white',
+                    color='white',
                     icon=Icons.ADD,
                     style=ButtonStyle(
-                        bgcolor=Colors.BLUE_900
+                        bgcolor="blue"
                     )
                 )
             ],
@@ -78,7 +86,8 @@ def main(page: Page):
                 OutlinedButton(
                     text="Search Employee",
                     icon=Icons.SEARCH_OUTLINED
-                )
+                ),
+                NextButton()
             ],
             alignment=MainAxisAlignment.START
         )
