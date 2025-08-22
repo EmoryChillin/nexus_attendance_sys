@@ -28,6 +28,16 @@ import utils.date_picker_example as date_picker_example
 def main(page: Page):
     page.title = "Nexus Attendance"
     page.padding = 20
+    
+    #page.vertical_alignment = ft.MainAxisAlignment.CENTER
+    page.appbar = ft.AppBar(
+        leading=Row(
+            controls=[
+                Text('Nexus',weight=FontWeight.BOLD),
+                Text('BI',weight=FontWeight.BOLD)
+            ]
+        )
+    )
 
     upper_ = Container(
         content= Row(
