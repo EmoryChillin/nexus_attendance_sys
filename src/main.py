@@ -36,7 +36,8 @@ def main(page: Page):
                 Text('Nexus',weight=FontWeight.BOLD, color='red'),
                 Text('BI',weight=FontWeight.BOLD, color='blue')
             ]
-        )
+        ),
+        bgcolor=Colors.WHITE
     )
 
     upper_ = Container(
