@@ -20,9 +20,14 @@ def main(page: ft.Page):
         content= Row(
             controls=[
                 Text("Time and Attendance",
-                     size=30,
+                     size=30,font_family='Poppins',
                      weight=FontWeight.BOLD),
-                ElevatedButton("Record Attendance", icon=Icons.ADD)
+                ft.FilledButton(text = "Record Attendance",
+                                height=50,
+                                width=200,
+                                color = 'white',
+                                icon=Icons.ADD,
+                                style=ft.ButtonStyle(bgcolor=Colors.BLUE_900))
                 ],
                 alignment=ft.MainAxisAlignment.SPACE_BETWEEN
         )
