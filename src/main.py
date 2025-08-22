@@ -20,18 +20,24 @@ def main(page: ft.Page):
         content= Row(
             controls=[
                 Text("Time and Attendance",
-                     size=30,font_family='Poppins',
-                     weight=FontWeight.BOLD),
+                     size=27,font_family='Poppins',
+                     weight=FontWeight.W_500),
                 ft.FilledButton(text = "Record Attendance",
-                                height=50,
-                                width=200,
+                                height=40,
+                                width=190,
                                 color = 'white',
                                 icon=Icons.ADD,
                                 style=ft.ButtonStyle(bgcolor=Colors.BLUE_900))
                 ],
-                alignment=ft.MainAxisAlignment.SPACE_BETWEEN
-        )
+                alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
+            ),
+            bgcolor=Colors.GREY_300,
+            border_radius=17,
+            width=800,
+            height=80,
+            padding=15
     )
+
     datepart = Container(
         content= Row(
             controls=[
