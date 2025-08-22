@@ -33,8 +33,8 @@ def main(page: Page):
     page.appbar = ft.AppBar(
         leading=Row(
             controls=[
-                Text('Nexus',weight=FontWeight.BOLD),
-                Text('BI',weight=FontWeight.BOLD)
+                Text('Nexus',weight=FontWeight.BOLD, color='red'),
+                Text('BI',weight=FontWeight.BOLD, color='blue')
             ]
         )
     )
