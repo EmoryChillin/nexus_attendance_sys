@@ -30,7 +30,7 @@ def main(page: ft.Page):
     datepart = Container(
         content= Row(
             controls=[
-                OutlinedButton("Date", icon=Icons.CALENDAR_MONTH),
+                OutlinedButton("Date", icon=Icons.CALENDAR_MONTH_ROUNDED),
                 OutlinedButton("Search Employee", icon=Icons.SEARCH_OUTLINED)
             ],
             alignment=ft.MainAxisAlignment.START
