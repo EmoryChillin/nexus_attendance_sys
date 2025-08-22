@@ -12,7 +12,7 @@ Alignment,alignment
 
 
 def main(page: ft.Page):
-    page.title = "Attendance"
+    page.title = "Nexus Attendance"
     page.padding = 20
     #page.vertical_alignment = ft.MainAxisAlignment.CENTER
 
