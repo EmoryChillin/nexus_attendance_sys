@@ -31,9 +31,7 @@ def main(page: ft.Page):
         content= Row(
             controls=[
                 OutlinedButton("Search Employee", icon=Icons.SEARCH_OUTLINED),
-                Container(
-                    height=0.5
-                    )
+                OutlinedButton("Search Employee", icon=Icons.SEARCH_OUTLINED)
             ],
             alignment=ft.MainAxisAlignment.SPACE_BETWEEN
         )
